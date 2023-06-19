@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 .carousel-item {
     height: 100vh;
@@ -146,3 +150,27 @@
         padding-bottom: 80px;
     }
 }
+
+/* footer */
+
+.footer {
+    background-color: #bbc5ce;
+    padding: 20px 0;
+}
+.footer .container {
+    text-align: center;
+}
+.footer p {
+    font-size: 1.3em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Add any additional styling you need for the sticky navbar */
+  }
+  
+

@@ -9,7 +9,7 @@
     <Link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#"><span class="text-warning">Yam</span>mish</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
              
               <li class="nav-item">
@@ -42,7 +42,7 @@
         </div>
       </nav>
       <!-- carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -113,11 +113,11 @@
 
       <!-- about us section -->
 
-      <section id="about" class="py-5">
+      <section id="about" class="py-5 section1">
         <div class="container-fluid">
           <div class="row">
             <div class="col-">
-              <h2 class="text-center delight">About Us</h2>
+              <h2 class="text-center delight py-4">About Us</h2>
               <p class="p-5">Welcome to our restaurant! We are proud to offer a unique dining experience that combines delicious food,<br /> refreshing drinks, and exceptional conference facilities.
               At our restaurant, we believe in creating memorable moments for our guests.<br /> Whether you're here for a business meeting, a social gathering, or simply a great meal, our team is dedicated to providing you with outstanding service.<br />
               Our conference facilities are equipped with state-of-the-art technology and can accommodate both small and large groups.<br /> Whether you're planning a corporate event, a workshop, or a private function, we have the perfect space for you.
@@ -128,10 +128,11 @@
            
           </div>
         </div>
+        </section>
       
 
       <!-- section one -->
-      <div class="container-fluid mt-5">
+      <div class="container-fluid mt-5" id="menu">
         <div class="container">
           <h1 class="text-center delicious p-5">Delicious Drinks</h1>
         <div class="row">
@@ -165,7 +166,7 @@
         </div>
       </div>
       <!-- section 3 -->
-      <div class="container-fluid mt-5">
+      <div class="container-fluid mt-5" id="services">
         <div class="container">
           <h1 class="text-center delicious p-5">Welcome to Our comfort <span class="delight">Confrencing</span></h1>
         <div class="row">
@@ -175,19 +176,58 @@
             </div>
             <div class="col-md-7  p-5">
               <span class="number">01</span>
-              <h2 class="beet">Refreshing Tropical Delight</h2>
-              <p class="beet-para">Indulge in the exquisite flavors of our signature tropical drink. Made with a blend of freshly squeezed fruits and a hint of island paradise,
-                 this refreshing concoction will transport your taste buds to a sunny beach getaway.</p>
+              <h2>Unleash Your Potential at the Future Summit</h2>
+              <p>Join us for an exceptional conference experience where innovation meets collaboration. The Future Summit brings together industry leaders, visionaries, and experts to explore the latest trends and advancements in technology, business, and beyond.</p>
+              <p>Discover cutting-edge strategies, gain valuable insights, and network with like-minded professionals from around the globe. Our thought-provoking sessions, hands-on workshops, and inspiring keynote speakers will empower you to unleash your potential and thrive in a rapidly evolving world.</p>
+              <a href="#" class="btn btn-primary">Register Now</a>
               </div>
           </div>
         </div>
       </div>
-      
-      
 
+      <!-- contact form -->
+    <section id="contact">
+      <div class="container py-5">
+        <h2 class="delight">Contact Form</h2>
+      <form action="#" method="post" id="contactForm">
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+          <p>&copy; 2023 Your Restaurant. All rights reserved.</p>
+          <p>123 Main Street, City, State ZIP</p>
+          <p>Phone: (123) 456-7890</p>
+      </div>
+  </footer>
+
+      
+      
+      
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
