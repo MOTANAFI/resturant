@@ -144,6 +144,10 @@ html {
       font-weight: bold;
        color: #333333; 
 }
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
 @media (min-width: 544px) {
     .steps {
         padding-top: 80px;
