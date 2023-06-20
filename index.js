@@ -1,4 +1,17 @@
 // 
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (window.innerWidth < 992) {
+        navbarToggler.click();
+      }
+    });
+  });
+});
+
 
 const section1 = document.querySelector('.section1');
 const nav = document.querySelector('.navbar');
